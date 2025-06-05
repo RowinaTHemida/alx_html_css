@@ -1,0 +1,68 @@
+/* ----- HEADER ----- */
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  height: 40px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+}
+
+/* ----- BANNER SECTION ----- */
+main section:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 60px;
+}
+
+main section:first-of-type .text-block {
+  max-width: 50%;
+}
+
+main section:first-of-type h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+main section:first-of-type p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+main section:first-of-type button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #ff6565;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main section:first-of-type .image-block img {
+  max-width: 100%;
+  height: auto;
+}
