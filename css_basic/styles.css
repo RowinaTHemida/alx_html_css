@@ -1,13 +1,72 @@
-/* Task 2: New color, new height */
+/* Layout from Task 1 */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+/* Flexbox for article and aside */
+article {
+  flex: 2;
+  overflow-y: auto;
+  background-color: white;
+  padding: 20px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Task 2 */
 header {
   height: 70px;
   background-color: #FF0000;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
 footer {
   background-color: #FF0000;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
+/* Custom logo styling */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 15px;
+  color: white;
+  list-style: none;
+}
 
+/* Remove list styles */
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
 
+header li {
+  color: white;
+  font-weight: bold;
+}
 
