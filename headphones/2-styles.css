@@ -1,0 +1,199 @@
+/* ===== Reset and Variables ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #FF6565;
+  --max-width: 1000px;
+  --font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* ===== Base Styling ===== */
+body {
+  font-family: var(--font-family);
+  background-color: #000;
+  color: white;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ===== Header ===== */
+.main-header {
+  background-color: black;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  color: var(--main-color);
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background-image: url("images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 150px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background-color: var(--main-color);
+  border: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.hero button:hover,
+.hero button:active {
+  opacity: 0.9;
+}
+
+/* ===== What We Do Section ===== */
+.what-we-do {
+  background-color: #f2f2f2;
+  color: #000;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.what-we-do h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.service span {
+  font-size: 50px;
+  color: var(--main-color);
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 16px;
+}
+
+/* ===== Our Results Section ===== */
+.our-results {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.our-results h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.our-results p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.results-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.result {
+  flex: 1;
+  min-width: 200px;
+  max-width: 200px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.result span {
+  font-size: 36px;
+  color: var(--main-color);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.result h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 480px) {
+  .navbar {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .services,
+  .results-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+}
