@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.getElementById("hamburger");
-  const navbar = document.getElementById("navbar");
+  const navLinks = document.getElementById("nav-links");
 
-  hamburger.addEventListener("click", () => {
-    navbar.classList.toggle("show");
+  hamburger.addEventListener("click", function () {
+    navLinks.classList.toggle("show");
   });
 });
